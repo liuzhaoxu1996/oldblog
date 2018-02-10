@@ -27,7 +27,7 @@
     <!--Title-->
 
 
-<title>Hello World | Hexo</title>
+<title>js介绍，逻辑运算符，变量，值类型，运算符 | Hexo</title>
 
 
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -124,9 +124,9 @@
                     <p id="process"></p>
 <article class="post">
     <div class="post-head">
-        <h1 id="Hello World">
+        <h1 id="js介绍，逻辑运算符，变量，值类型，运算符">
             
-	            Hello World
+	            js介绍，逻辑运算符，变量，值类型，运算符
             
         </h1>
         <div class="post-meta">
@@ -152,7 +152,7 @@
     
     <span class="fa-wrap">
         <i class="fa fa-clock-o"></i>
-        <span class="date-meta">2018/01/16</span>
+        <span class="date-meta">2017/04/20</span>
     </span>
 </div>
 
@@ -161,15 +161,66 @@
     </div>
     
     <div class="post-body post-content">
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h2 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h2><ol>
+<li>shell部分 用户能操作的部分</li>
+<li>内核部分  <ul>
+<li>渲染引擎(html css语法渲染) </li>
+<li>js引擎(专门处理js)</li>
+<li>其他模块</li>
+</ul>
+</li>
+</ol>
+<p>浏览器引擎：</p>
+<ul>
+<li>chrome引擎V8</li>
+<li>火狐引擎jeagerMonkey</li>
+</ul>
+<h2 id="js逼格"><a href="#js逼格" class="headerlink" title="js逼格"></a>js逼格</h2><ol>
+<li>解释性语言：翻译一行执行一行，<ul>
+<li>优点：跨平台</li>
+<li>缺点：没有编译性语言快( c c++ ruby全部翻译再执行，编译性语言：不能跨平台）</li>
+</ul>
+</li>
+<li><p>单线程：同一时间干一件事</p>
+</li>
+<li><p>Javascript = ECMAScript + Dom + Bom</p>
+</li>
+</ol>
+<h2 id="js执行队列"><a href="#js执行队列" class="headerlink" title="js执行队列"></a>js执行队列</h2><p>转轮时间片：比如两个任务，会把他们分解成很多时间片，随机把时间片分配给队列，在往js里送，每一段时间随机干一件小事，最终把两件事一起干完。<br>（类似吃饭，桌子上有2盘菜，一碗饭，吃饭是一口饭，一口菜，最终把桌子上的饭菜吃完。）</p>
+<h2 id="主流浏览器内核"><a href="#主流浏览器内核" class="headerlink" title="主流浏览器内核"></a>主流浏览器内核</h2><ul>
+<li>IE       trident</li>
+<li>Chrome   blink</li>
+<li>firefox  Gecko</li>
+<li>Opera    presto</li>
+<li>Safari   webkit</li>
+</ul>
+<h2 id="命名规则："><a href="#命名规则：" class="headerlink" title="命名规则："></a>命名规则：</h2><ul>
+<li>1.变量名必须以英文字母， _ ,  $ 开头</li>
+<li>2.变量名可以包括英文字母，_, 数字</li>
+<li>3.不可以用系统的关键字，保留字作为变量名</li>
+</ul>
+<h2 id="值类型："><a href="#值类型：" class="headerlink" title="值类型："></a>值类型：</h2><p><strong>数据类型</strong></p>
+<ul>
+<li>不可改变的原始值：<br><br>栈数据(先进后出  进去123  拿出来321 )<ul>
+<li>number    –&gt;    10  20  30  55  666</li>
+<li>string    –&gt;    ‘gthsthrsrth’</li>
+<li>boolean   –&gt;    ture  false </li>
+<li>undefined –&gt;    undefined (未定义)</li>
+<li>null      –&gt;    null  (空)</li>
+</ul>
+</li>
+<li>例子</li>
+</ul>
+<p>var a = 10；</p>
+<p><img src="http://m.qpic.cn/psb?/V12ZEwXZ3XJLHy/y2GGtwW4NXUEQ7R9vb6HTpZg7Xy0fG4ZLFgdeLuX1fg!/b/dGgBAAAAAAAA&bo=mAHZAgAAAAADJ0A!&rf=viewer_4" width="200px" height="300px" alt="图片名称" align="center"></p>
+<ul>
+<li>引用值 (array object function …date RegExp)<br>堆数据, 引用值会特殊处理。</li>
+</ul>
+<p>例子<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">10</span>, <span class="number">20</span>]</span><br><span class="line">arr1 = arr;</span><br><span class="line">arr1.push(<span class="number">30</span>); </span><br><span class="line"></span><br><span class="line">arr是多少?</span><br><span class="line">[<span class="number">10</span>, <span class="number">20</span>, <span class="number">30</span>]</span><br></pre></td></tr></table></figure></p>
+<p><img src="http://m.qpic.cn/psb?/V12ZEwXZ3XJLHy/pzgGu.ynSB07dRyakHzoM31*FPaweNHKkLBIILD0KSo!/b/dF8BAAAAAAAA&bo=QgOAAgAAAAADN9E!&rf=viewer_4" width="300px" height="300px" alt="图片名称" align="center"></p>
+<p>例2</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">10</span>, <span class="number">20</span>]</span><br><span class="line">arr1 = arr;</span><br><span class="line">arr.push(<span class="number">30</span>); </span><br><span class="line">arr = [<span class="number">10</span>, <span class="number">20</span>]</span><br><span class="line"></span><br><span class="line">arr是多少?</span><br><span class="line">[<span class="number">10</span>, <span class="number">20</span>]</span><br></pre></td></tr></table></figure>
+<p><img src="http://m.qpic.cn/psb?/V12ZEwXZ3XJLHy/PLDMggf0.7ycKWOls*QqX.MB148kWltNnQB1qL7M1LA!/b/dPIAAAAAAAAA&bo=SgOAAgAAAAADB.k!&rf=viewer_4" width="300px" height="300px" alt="图片名称" align="center"></p>
 
     </div>
 
@@ -187,20 +238,15 @@
 
 <div class="article-nav prev-next-wrap clearfix">
     
+        <a href="/2018/01/02/函数节流&防抖/" class="pre-post btn btn-default"><i class="fa fa-angle-left fa-fw"></i>上一篇</a>
     
-        <a href="/2018/01/02/函数节流&防抖/" class="next-post btn btn-default">下一篇<i class="fa fa-angle-right fa-fw"></i></a>
     
 </div>
 
 
     <div id="comments">
         
-	<!--PC和WAP自适应版-->
-<div id="SOHUCS"></div>
-<script type="text/javascript">
-	(function(){var appid='cyt8KmUC1';var conf='prod_855a68d3b3d91855360a6215672a505a';var width=window.innerWidth||document.documentElement.clientWidth;if(width<960){window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id='+appid+'&conf='+conf+'"><\/script>');}else{var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}
-	c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})});}})();
-</script>	
+   <p>评论系统未开启，无法评论！</p>
 
     </div>
 
@@ -248,7 +294,7 @@
         
     <div class="widget">
       <h3 class="title">Archives</h3>
-        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/"><i class="fa" aria-hidden="true">January 2018</i></a><span class="archive-list-count">2</span></li></ul>
+        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/"><i class="fa" aria-hidden="true">January 2018</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/"><i class="fa" aria-hidden="true">April 2017</i></a><span class="archive-list-count">1</span></li></ul>
     </div>
 
 

@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html lang="">
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="blog">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <link rel="dns-prefetch" href="">
+    <!--SEO-->
+
+
+
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+
+<title>移动端适配-viewport | blog</title>
+
+
+    <link rel="alternate" href="/atom.xml" title="blog" type="application/atom+xml">
+
+
+    <link rel="icon" href="/favicon.ico">
+
+    
+
+
+
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css?rev=3.3.4">
+<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+
+
+
+
+    
+	<div class="hide">
+		<script type="text/javascript">
+			var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+	</div>
+
+
+
+
+
+
+    
+</head>
+
+
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
+<body>
+    <header class="main-header"  style="background-image:url(http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/banner2.jpg)"  >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title="">
+            <img src="/img/avatar.jpg" alt="logo头像">
+        </a>
+        <div class="branding">
+        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+                <h2> 认准就去做，做就做到最好 </h2>
+             
+    	</div>
+    </div>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+    </script>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                            <li role="presentation"><a href="/"><i class="fa fa-fw "></i>Home</a>
+                            </li>
+                        
+                            <li role="presentation"><a href="/categories/前端/"><i class="fa fa-fw "></i>前端</a>
+                            </li>
+                        
+                            <li role="presentation"><a href="/categories/工具/"><i class="fa fa-fw "></i>工具</a>
+                            </li>
+                        
+                            <li role="presentation"><a href="/categories/资源/"><i class="fa fa-fw "></i>资源</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="移动端适配-viewport">
+            
+	            移动端适配-viewport
+            
+        </h1>
+        <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/ ">
+             
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                 
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">2017/11/02</span>
+    </span>
+</div>
+
+            
+            
+    </div>
+    
+    <div class="post-body post-content">
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这次想聊聊移动开发相关的事。是的，你没有看错，一句话就可以开始你的移动前端开发。</p>
+<p>你心里一定在想，什么话这么酷，能够瞬间带入到移动前端开发的世界。</p>
+<p>但其实它一点也不新奇，不复杂。</p>
+<h2 id="viewport-简介"><a href="#viewport-简介" class="headerlink" title="viewport 简介"></a>viewport 简介</h2><p>没错，就是 viewport 特性，一个移动专属的 Meta 值，用于定义视口的各种行为。</p>
+<p>该特性最先由 Apple 引入，用于解决移动端的页面展示问题，后续被越来越多的厂商跟进。</p>
+<p>举个简单的例子来讲为什么会需要它：</p>
+<p>我们知道用户大规模使用手机等移动设备来进行网页浏览器，其实得益于智能手持设备的兴起，也就是近几年的事。（还记得不久前的几年，满大街都还是诺基亚的天下么？）</p>
+<p>这时有一个很现实的问题摆在了厂商面前，用户并不能很好地通过手机等设备访问网页，因为屏幕太小。</p>
+<h3 id="layout-viewport"><a href="#layout-viewport" class="headerlink" title="layout viewport"></a><code>layout viewport</code></h3><p>Apple 也发现了这个问题，并且适时的出现，它提出了一个方案用来解决这个问题。在 iOS Safari 中定义了一个 viewport meta 标签，用来创建一个虚拟的布局视口（layout viewport），而这个视口的分辨率接近于 PC 显示器，Apple 将其定义为 980px（其他厂商各有不同 ①）。</p>
+<p>这就很好的解决了早期的页面在手机上显示的问题，由于两者之间的宽度趋近，CSS 只需要像在 PC 上那样渲染页面就行，原有的页面结构不会被破坏。</p>
+<p>① 的描述大致如下，数值不一定持续准确，厂商可能更改，但这个绝对值其实并非特别重要：<br>iOS, Android 基本都是: 980px<br>BlackBerry: 1024px</p>
+<h3 id="visual-viewport"><a href="#visual-viewport" class="headerlink" title="visual viewport"></a><code>visual viewport</code></h3><p>有了 <code>layout viewport</code>，我们还需要一个视口用来承载它，这个视口可以简单的认为是手持设备物理屏幕的可视区域，我们称之为（视觉视口）<code>visual viewport</code>。这是一个比较直观的概念，因为你能看得见你的手机屏幕。</p>
+<p>对于 <code>visual viewport</code>，开发者一般只需要知道它的存在和概念就行，因为无法对它进行任何设置或者修改。很明显，<code>visual viewport</code> 的尺寸不会是一个固定的值，甚至每款设备都可能不同。大致列几种常见设备的 <code>visual viewport</code> 尺寸：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">iPhone4~iPhone5S: <span class="number">320</span> * <span class="number">480</span>px  </span><br><span class="line">iPhone6~iPhone6S: <span class="number">375</span> * <span class="number">627</span>px  </span><br><span class="line">iPhone6 Plus~iPhone6S Plus: <span class="number">414</span> * <span class="number">736</span>px</span><br></pre></td></tr></table></figure>
+<p>以 iPhone4S 为例，会在其 320px 的 <code>visual viewport</code> 上，创建一个宽 980px 的 <code>layout viewport</code>，于是用户可以在 <code>visual viewport</code> 中拖动或者缩放网页，来获得良好的浏览效果；布局视口用来配合 CSS 渲染布局，当我们定义一个容器的宽度为 100%时，这个容器的实际宽度是 980px 而不是 320px，通过这种方式大部分网页就能以缩放的形式正常显示在手机屏幕上了。</p>
+<p>② 的描述大致如下：早期移动前端开发工程师常能见到宽 640px 的设计稿，原因就是 UI 工程师以物理屏幕宽度为 320px 的 iPhone4-iPhone5S 作为参照设计；当然，现在你还可能会见到 750px 和 1242px 尺寸的设计稿，原因当然是 iPhone6 的出现</p>
+<p>当然，为了更好的适配移动端或者只为移动端设计的应用，单有布局视口和视觉视口还是不够的。</p>
+<h3 id="ideal-viewport"><a href="#ideal-viewport" class="headerlink" title="ideal viewport"></a><code>ideal viewport</code></h3><p>我们还需要一个视口，它类似于布局视口，但宽度和视觉视口相同，这就是完美视口（ideal viewport）。</p>
+<p>有了完美视口，用户不用缩放和拖动网页就能够很好的进行网页浏览。而完美视口也是通过 <code>viewport meta</code> 的某种设置来达到。</p>
+<p>说了这么一大堆的东西，貌似都和 <code>viewport</code> 有关联，那么 <code>viewport</code> 到底怎么搞，请继续往下。</p>
+<p>关于 3 个视口，PPK 已经做了非常棒的阐释，你也可以在 `StackOverflow 上找到一些对此描述的相互补充，例如：[1], [2]，有兴趣的童鞋也可以看看</p>
+<p>viewport 特性通常情况下，viewport 有以下 6 种设置。当然厂商可能会增加一些特定的设置，比如 iOS Safari7.1 增加了一种在网页加载时隐藏地址栏与导航栏的设置：minimal-ui，不过随后又将之移除了。</p>
+<p><code>width</code> 正整数或 device-width 定义视口的宽度，单位为像素<br><code>height</code> 正整数或 device-height 定义视口的高度，单位为像素<br><code>initial-scale</code> [0.0-10.0] 定义初始缩放值<br><code>minimum-scale</code> [0.0-10.0] 定义缩小最小比例，它必须小于或等于 maximum-scale 设置<br><code>maximum-scale</code> [0.0-10.0] 定义放大最大比例，它必须大于或等于 minimum-scale 设置<br><code>user-scalable</code> yes/no 定义是否允许用户手动缩放页面，默认值 yes</p>
+<blockquote>
+<p>width</p>
+</blockquote>
+<p><code>width</code> 被用来定义 <code>layout viewport</code> 的宽度，如果不指定该属性（或者移除 viewport meta 标签），则 <code>layout viewport</code> 宽度为厂商默认值。如：iPhone 为 980px；</p>
+<p>举个例子：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<p>此时的 <code>layout viewport</code> 将成为 <code>ideal viewport</code>，因为 <code>layout viewport</code> 宽度与设备视觉视口宽度一致了。</p>
+<p>除了 <code>width</code> 之外，还有一个属性定义也能实现 ideal <code>viewport</code>，那就是 <code>initial-scale</code>。</p>
+<blockquote>
+<p>height</p>
+</blockquote>
+<p>与 <code>width</code> 类似，但实际上却不常用，因为没有太多的 use case。</p>
+<p><code>initial-scale</code><br>如果想页面默认以某个比例放大或者缩小然后呈现给用户，那么可以通过定义 <code>initial-scale</code> 来完成。</p>
+<p><code>initial-scale</code> 用于指定页面的初始缩放比例，假定你这样定义：</p>
+<p><meta name="viewport" content="initial-scale=2"><br>那么用户将会看到2倍大小的页面内容。</p>
+<p>在说 <code>width</code> 的时候，我们说到 <code>initial-scale</code> 也能实现 <code>ideal viewport</code>，是的，你只需要这样做，也可以得到完美视口：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"initial-scale=1"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<p><code>maximum-scale</code><br>在移动端，你可能会考虑用户浏览不便，然后给予用户放大页面的权利，但同时又希望是在一定范围内的放大，这时就可以使用 maximum-scale 来进行约束。</p>
+<p><code>maximum-scale</code> 用于指定用户能够放大的比例。</p>
+<p>举个例子来讲：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"initial-scale=1,maximum-scale=5"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<p>假设页面的默认缩放值 <code>initial-scale</code> 是 1，那么用户最终能够将页面放大到这个初始页面大小的 5 倍。</p>
+<p><code>minimum-scale</code><br>类似 <code>maximum-scale</code> 的描述，不过 <code>minimum-scale</code> 是用来指定页面缩小比例的。</p>
+<p>通常情况下，为了有更好地体验，不会定义该属性的值比 1 更小，因为那样页面将变得难以阅读。</p>
+<p><code>user-scalable</code><br>如果你不想页面被放大或者缩小，通过定义 <code>user-scalable</code> 来约束用户是否可以通过手势对页面进行缩放即可。</p>
+<p>该属性的默认值为 yes，即可被缩放（如果使用默认值，该属性可以不定义）；当然，如果你的应用不打算让用户拥有缩放权限，可以将该值设置为 no。</p>
+<p>使用方法如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"user-scalable=no"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>正如开篇所说，这既不高深也不新奇，它而仅仅是一点观念转变。</p>
+<p>当你掌握了 viewport，那么意味着你已经大致了解了移动平台与 PC 平台的不同，你可以更专注而细致的去解决某些平台差异问题。</p>
+
+    </div>
+
+    <div class="post-footer">   
+        <div>
+            
+                转载声明：商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="liuzhaoxu1996.github.io" target="_blank">刘朝旭lius</a>
+            
+        </div>
+        <div>
+            
+        </div>  
+    </div>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+        <a href="/2018/01/02/函数节流&防抖/" class="pre-post btn btn-default"><i class="fa fa-angle-left fa-fw"></i>上一篇</a>
+    
+    
+        <a href="/2017/04/20/1. js介绍，逻辑运算符，变量，值类型，运算符/" class="next-post btn btn-default">下一篇<i class="fa fa-angle-right fa-fw"></i></a>
+    
+</div>
+
+
+    <div id="comments">
+        
+   <p>评论系统未开启，无法评论！</p>
+
+    </div>
+
+
+
+
+
+                </main>
+                
+    <aside class="col-md-4 sidebar">
+        
+        
+        
+        
+        
+        
+    <div class="widget">
+      <h3 class="title">Social</h3> 
+        <div class="content social">
+            
+	            <a href="//github.com/liuzhaoxu1996" rel="external nofollow" title="Github" target="_blank">
+			    	<i class="git fa fa-git"></i>
+			    </a>
+            
+	            <a href="mailto:1097959570@qq.com" rel="external nofollow" title="邮箱" target="_blank">
+			    	<i class="envelope-o fa fa-envelope-o"></i>
+			    </a>
+            
+	            <a href="/" rel="external nofollow" title="联系QQ" target="_blank">
+			    	<i class="qq fa fa-qq"></i>
+			    </a>
+            
+	            <a href="/" rel="external nofollow" title="微博" target="_blank">
+			    	<i class="weibo fa fa-weibo"></i>
+			    </a>
+            
+        </div>
+    </div>
+
+
+        
+        
+
+        
+        
+    <div class="widget">
+      <h3 class="title">Archives</h3>
+        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/"><i class="fa" aria-hidden="true">January 2018</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/"><i class="fa" aria-hidden="true">November 2017</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/"><i class="fa" aria-hidden="true">April 2017</i></a><span class="archive-list-count">1</span></li></ul>
+    </div>
+
+
+        
+        
+
+        
+        
+    <div class="widget">
+        <h3 class="title">Friends</h3>
+        <div class="content friends-link">
+        
+            <a href="http://www.zhangxinxu.com/" class="fa" target="_blank">张鑫旭博客</a>
+        
+            <a href="http://fex.baidu.com/" class="fa" target="_blank">百度FEX</a>
+        
+            <a href="http://www.alloyteam.com/" class="fa" target="_blank">腾讯Alloyteam</a>
+        
+        </div>
+    </div>
+
+
+        
+    </aside>
+
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+    <span id="busuanzi_container_page_pv" >
+        本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+    </span>
+</footer>
+
+<a id="back-to-top" class="hide">
+	<i class="fa fa-chevron-up"></i>
+</a>
+
+
+
+
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <span>Copyright &copy; 2017
+                </span> | 
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> | 
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="/js/app.js?rev=@@hash"></script>
+
+
+</body>
+</html>

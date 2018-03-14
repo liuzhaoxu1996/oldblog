@@ -27,7 +27,7 @@
     <!--Title-->
 
 
-<title>函数防抖&amp;节流 | blog</title>
+<title>Archives: 2017/10 | blog</title>
 
 
     <link rel="alternate" href="/atom.xml" title="blog" type="application/atom+xml">
@@ -120,84 +120,21 @@
     <section class="content-wrap">
         <div class="container">
             <div class="row">
-                <main class="col-md-8 main-content m-post">
-                    <p id="process"></p>
-<article class="post">
-    <div class="post-head">
-        <h1 id="函数防抖&amp;节流">
-            
-	            函数防抖&amp;节流
-            
-        </h1>
-        <div class="post-meta">
-    
-    
-    <span class="categories-meta fa-wrap">
-        <i class="fa fa-folder-open-o"></i>
-        <a href="/categories/ ">
-             
-        </a>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-                 
-            
-        </span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-clock-o"></i>
-        <span class="date-meta">2018/01/02</span>
-    </span>
-</div>
-
-            
-            
-    </div>
-    
-    <div class="post-body post-content">
-        <p>防抖：<br>好比公交车司机进站时，打开车门让乘客进来。不加防抖的场景是开一次车门，进来一个乘客，关一次车门。加防抖的场景，开一次车门，让乘客都进来再关车门。</p>
-<p>节流：<br>好比抢购物券，点击次数越多，抢到的几率越大。不节流的话，写一个脚本，一秒钟可以点击上百万次，这样很不公平。加上节流，让规定时间内，点击多少次都算一下，就很公平。</p>
-<blockquote>
-<p>防抖</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">debounce</span> (<span class="params">fn, delay</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> timer = <span class="literal">null</span>;</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 通过 ‘this’ 和 ‘arguments’ 获取函数的作用域和变量</span></span><br><span class="line">    <span class="keyword">let</span> context = <span class="keyword">this</span>;</span><br><span class="line">    <span class="keyword">let</span> args = <span class="built_in">arguments</span>;</span><br><span class="line"></span><br><span class="line">    clearTimeout(timer);</span><br><span class="line">    timer = setTimeout (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      fn.apply(context, args);</span><br><span class="line">    &#125;, delay);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>节流</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> throttle = <span class="function"><span class="keyword">function</span> (<span class="params">func,delay</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> prev = <span class="built_in">Date</span>.now();</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> context = <span class="keyword">this</span>;</span><br><span class="line">        <span class="keyword">var</span> args = <span class="built_in">arguments</span>;</span><br><span class="line">        <span class="keyword">var</span> now = <span class="built_in">Date</span>.now();</span><br><span class="line">        <span class="keyword">if</span> (now - prev &gt;= delay) &#123;</span><br><span class="line">            func.apply(context, args);</span><br><span class="line">            prev = <span class="built_in">Date</span>.now();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-    </div>
-
-    <div class="post-footer">   
-        <div>
-            
-                转载声明：商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="liuzhaoxu1996.github.io" target="_blank">刘朝旭lius</a>
-            
-        </div>
-        <div>
-            
-        </div>  
-    </div>
-</article>
-
-<div class="article-nav prev-next-wrap clearfix">
-    
-    
-        <a href="/2017/12/07/javascript模式/" class="next-post btn btn-default">下一篇<i class="fa fa-angle-right fa-fw"></i></a>
-    
-</div>
-
-
-    <div id="comments">
+                <main class="col-md-8 main-content ">
+                    <div id="main">
+  <div id="post-list">
+    <ul class="archives-post-list">
+    	<h1 class="info">2017年 10月</h1>
         
-   <p>评论系统未开启，无法评论！</p>
-
-    </div>
+          <li class="post-items" _href="/2017/10/31/10. 继承模式, 命名空间, 对象枚举/">
+            <h3 class="post-item-title">
+            	<a href="/2017/10/31/10. 继承模式, 命名空间, 对象枚举/"> 继承模式 </a>
+            </h3>  
+          </li>
+        
+    </ul>
+  </div>
+</div>
 
 
 

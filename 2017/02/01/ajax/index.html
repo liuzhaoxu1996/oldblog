@@ -1,0 +1,374 @@
+<!DOCTYPE HTML>
+<html lang="">
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="blog">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <link rel="dns-prefetch" href="">
+    <!--SEO-->
+
+
+
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+
+<title>Ajax | blog</title>
+
+
+    <link rel="alternate" href="/atom.xml" title="blog" type="application/atom+xml">
+
+
+    <link rel="icon" href="/favicon.ico">
+
+    
+
+
+
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css?rev=3.3.4">
+<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+
+
+
+
+    
+	<div class="hide">
+		<script type="text/javascript">
+			var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+	</div>
+
+
+
+
+
+
+    
+</head>
+
+
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
+<body>
+    <header class="main-header"  style="background-image:url(http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/banner2.jpg)"  >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title="">
+            <img src="/img/avatar.jpg" alt="logo头像">
+        </a>
+        <div class="branding">
+        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+                <h2> 认准就去做，做就做到最好 </h2>
+             
+    	</div>
+    </div>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+    </script>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                            <li role="presentation"><a href="/"><i class="fa fa-fw "></i>Home</a>
+                            </li>
+                        
+                            <li role="presentation"><a href="/categories/前端/"><i class="fa fa-fw "></i>前端</a>
+                            </li>
+                        
+                            <li role="presentation"><a href="/categories/工具/"><i class="fa fa-fw "></i>工具</a>
+                            </li>
+                        
+                            <li role="presentation"><a href="/categories/资源/"><i class="fa fa-fw "></i>资源</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="Ajax">
+            
+	            Ajax
+            
+        </h1>
+        <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/ ">
+             
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                 
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">2017/02/01</span>
+    </span>
+</div>
+
+            
+            
+            <p class="fa fa-exclamation-triangle warning">
+                本文于<strong>411</strong>天之前发表，文中内容可能已经过时。
+            </p>
+        
+    </div>
+    
+    <div class="post-body post-content">
+        <h1 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h1><ol>
+<li><p>ajax过程<br>(1)创建XMLHttpRequest对象,也就是创建一个异步调用对象.<br>(2)创建一个新的HTTP请求,并指定该HTTP请求的方法、URL及验证信息.<br>(3)设置响应HTTP请求状态变化的函数.<br>(4)发送HTTP请求.<br>(5)获取异步调用返回的数据.<br>(6)使用JavaScript和DOM实现局部刷新.  </p>
+</li>
+<li><p>get和post的区别<br>GET一般用于获取/查询资源信息，而POST一般用于更新资源信息。<br>GET请求的数据会附在URL之后（就是把数据放置在HTTP协议头中），以?分割URL和传输数据，参数之间以&amp;相连，POST把提交的数据则放置在是HTTP包的包体中。<br>GET 请求一般不应产生副作用。就是说，它仅仅是获取资源信息，就像数据库查询一样，不会修改，增加数据，不会影响资源的状态。<br>get的安全性可能没有post高，所以我们一般用get来获取数据，post一般用来修改数据。<br>GET方式提交的数据最多只能是1024字节，因为GET是通过URL提交数据，那么GET可提交的数据量就跟URL的长度有直接关系了。<br>理论上讲，POST是没有大小限制的，HTTP协议规范也没有进行大小限制，说“POST数据量存在80K/100K的大小限制”是不准确的，POST数据是没有限制的，起限制作用的是服务器的处理程序的处理能力。<br>(POST的安全性要比GET的安全性高。注意：这里所说的安全性和上面GET提到的“安全”不是同个概念。上面“安全”的含义仅仅是不作数据修改，而这里安全的含义是真正的Security的含义，比如：通过GET提交数据，用户名和密码将明文出现在URL上，因为(1)登录页面有可能被浏览器缓存，(2)其他人查看浏览器的历史纪录，那么别人就可以拿到你的账号和密码了，除此之外，使用GET提交数据还可能会造成Cross-site request forgery攻击，Get是向服务器发索取数据的一种请求，而Post是向服务器提交数据的一种请求，GET和POST只是发送机制不同，并不是一个取一个发。)  </p>
+</li>
+<li><p>异步和同步的区别<br>javascript同步表示sync，指：代码依次执行   javascript异步表示async，指：代码执行不按顺序，‘跳过’执行，待其他某些代码执行完后再来执行，成为异步。  </p>
+</li>
+<li><p>介绍一下ajax<br>异步javascript和XML，是指一种创建交互式网页应用的网页开发技术。通过后台与服务器进行少量数据交换，AJAX可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。  </p>
+</li>
+</ol>
+<p>(Ajax的原理简单来说通过XmlHttpRequest对象来向服务器发异步请求，从服务器获得数据，然后用javascript来操作DOM而更新页面。把服务器端看成一个数据接口(只负责吐数据)，它返回的是一个纯文本流，当然，这个文本流可以是XML格式，可以是Html，可以是Javascript代码，也可以只是一个字符串。这时候，XMLHttpRequest向服务器端请求这个页面，服务器端将文本的结果写入页面，这和普通的web开发流程是一样的，不同的是，客户端在异步获取这个结果后，不是直接显示在页面，而是先由javascript来处理，然后再显示在页面。)  </p>
+<ol>
+<li><p>你还看过jq源码是吧？你告诉告诉我ajax他里面整个随机数是干什么用的？（同原生js封装的ajax里面的时间戳）<br>是为了欺骗浏览器或代理服务器用的；某些代理服务器会无视 no-cache 之类的标识，对响应结果进行强行缓存；而当url请求不改变的时候，有时候会导致浏览器不向服务器发送请求，而直接取调用缓存中的数据。加上随机数就是欺骗浏览器url改变了，要每次向服务器发送请求而不去调用缓存中的数据；  </p>
+</li>
+<li><p>编写原生Ajax</p>
+</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">AJAX</span>(<span class="params">json</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> url = json.url,</span><br><span class="line">		method = json.method,</span><br><span class="line">		flag = json.flag,</span><br><span class="line">		data = json.data,</span><br><span class="line">		callBack = json.callBack,</span><br><span class="line">		xhr = <span class="literal">null</span>;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">window</span>.XMLHttpRequest) &#123;</span><br><span class="line">		xhr = <span class="keyword">new</span> <span class="built_in">window</span>.XMLHttpRequest();</span><br><span class="line">	&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">		xhr = <span class="keyword">new</span> ActiveXObject(<span class="string">'Mircosoft.XMLHTTP'</span>);</span><br><span class="line">	&#125;	</span><br><span class="line">	method = method.toUpperCase(); <span class="comment">//把get/post转换从大写GET/POST。</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span>(method == <span class="string">'GET'</span>) &#123;</span><br><span class="line">                url += <span class="string">'?'</span> + data + <span class="keyword">new</span> <span class="built_in">Date</span>().getTime(); <span class="comment">//这个添加时间戳，是为了防止get请求本地缓存的地址。</span></span><br><span class="line">		xhr.open(<span class="string">'GET'</span>, url, flag);</span><br><span class="line">	&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">		xhr.open(<span class="string">'POST'</span>, url, flag);</span><br><span class="line">	&#125;</span><br><span class="line">	xhr.onreadystatechange = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (xhr.readyState === <span class="number">4</span>)&#123;</span><br><span class="line">			<span class="keyword">if</span>(xhr.status ===<span class="number">200</span>) &#123;</span><br><span class="line">			callBack(xhr.responseText);</span><br><span class="line">			&#125; <span class="keyword">else</span>&#123;</span><br><span class="line">				alert(<span class="string">'error'</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(method == <span class="string">'GET'</span>) &#123;</span><br><span class="line">		xhr.send();</span><br><span class="line">	&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">		xhr.setRequestHeader(<span class="string">'Content-Type'</span>, <span class="string">'application/x-www-form-urlencoded'</span>);</span><br><span class="line">		xhr.send(data);</span><br><span class="line">	&#125;	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>考虑一下性能优化问题，如果我们把监听部分写在最后面，前面open和send的时候readyState已经变成了2，如果这个时候网速非常快，刚刚请求数据，数据就已经返回回来了，但是代码还没有走到监听部分，这就导致了监听部分的失效。<br>虽然这种情况非常少见，但是为了防止失效的发生，我们要把监听部分放在open后面send前面。</p>
+<ol>
+<li>ajax的优缺点:<br>Ajax是异步JavaScript和XML，用于在Web页面中实现异步数据交互。</li>
+</ol>
+<p>优点：<br>可以使得页面不重载全部内容的情况下加载局部内容，降低数据传输量<br>避免用户不断刷新或者跳转页面，提高用户体验<br>缺点：<br>对搜索引擎不友好（要实现ajax下的前后退功能成本较大可能造成请求数的增加跨域问题限制JSON是一种轻量级的数据交换格式，ECMA的一个子集。优点：轻量级、易于人的阅读和编写，便于机器（JavaScript）解析，支持复合数据类型（数组、对象、字符串、数字)</p>
+<ol>
+<li><p>知道什么是pjax吗?<br>pjax是一种基于ajax+history.pushState的新技术，该技术可以无刷新改变页面的内容，并且可以改变页面的URL。（关键点：可以实现ajax无法实现的后退功能）pjax是ajax+pushState的封装，同时支持本地存储、动画等多种功能。目前支持jquery、qwrap、kissy等多种版本。</p>
+</li>
+<li><p>ajax的readystate有4个状态 ，每个状态表示什么?<br>0代表未初始化，此时已经创建了一个XMLHttpRequest对象</p>
+<ul>
+<li><p>1代表读取中，此时代码已经调用XMLHttpRequest的open方法并且XMLHttpRequest已经将请求发送到服务期。</p>
+</li>
+<li><p>2代表已读取，此时已经通过open方法把一个请求发送到服务端，但是还没有收到。</p>
+</li>
+<li><p>3代表交互中，此时已经收到http响应头部信息，但是消息主体部分还没有完全接受</p>
+</li>
+<li><p>4代表完成，此时响应已经被完全接受。</p>
+</li>
+</ul>
+</li>
+<li><p>什么是XMLHTTPRequest对象?<br>XMLHttpRequest是ajax的核心机制，是JavaScript的一个内置对象。它是在IE4中首先引入的，是一种支持异步请求的技术。简单的说，也就是javascript可以及时向服务器提出请求和处理响应，而不阻塞用户。达到无刷新的效果。</p>
+</li>
+<li><p>AJAX应用和传统Web应用有什么不同?<br>在传统的Javascript编程中，如果想得到服务器端数据库或文件上的信息，或者发送客户端信息到服务器，需要建立一个HTML form然后GET或者POST数据到服务器端。用户需要点击”Submit”按钮来发送或者接受数据信息，然后等待服务器响应请求，页面重新加载。<br>因为服务器每次都会返回一个新的页面， 所以传统的web应用有可能很慢而且用户交互不友好。<br>使用AJAX技术， 就可以使Javascript通过XMLHttpRequest对象直接与服务器进行交互。<br>通过HTTP Request， 一个web页面可以发送一个请求到web服务器并且接受web服务器返回的信息(不用重新加载页面)，展示给用户的还是通一个页面，用户感觉页面刷新，也看不到到Javascript后台进行的发送请求和接受响应。</p>
+</li>
+<li><p>AJAX请求总共有多少种CALLBACK。<br>Ajax请求总共有八种Callback<br>onSuccess<br>onFailure<br>onUninitialized<br>onLoading<br>onLoaded<br>onInteractive<br>onComplete<br>onException  </p>
+</li>
+<li><p>Ajax和javascript的区别。<br>javascript是一种在浏览器端执行的脚本语言，Ajax是一种创建交互式网页应用的开发技术 ，它是利用了一系列相关的技术其中就包括javascript。<br>Javascript是由网景公司开发的一种脚本语言，它和sun公司的java语言是没有任何关系的，它们相似的名称只是一种行销策略。<br>在一般的web开发中，javascript是在浏览器端执行的，我们可以用javascript控制浏览器的行为和内容。<br>在 Ajax应用中信息是如何在浏览器和服务器之间传递的,通过XML数据或者字符串。</p>
+</li>
+<li><p>XMLHttpRequest对象在IE和Firefox中创建方式有没有不同。<br>有，IE中通过new ActiveXObject()得到，Firefox中通过newXMLHttpRequest()得到</p>
+</li>
+<li><p>介绍一下XMLHttpRequest对象的常用方法和属性。<br>方法<br>1.abort 停止当前的请求<br>2.getAllResponseHeaders 把http请求的所有响应首部最为键/值返回<br>3.getResponseHeaders(‘headerLabel’) 返回指定首部的串值<br>4.open(‘method’, ‘url’, ‘true’)   建立对服务器的调用，method参数可以是get、post或者put。url参数可以是相对url或者绝对url，第三个参数是选择异步还是同步，异步是true。这个方法还包括三个可选参数。<br>4.send(content) 向服务器发送请求<br>6.setRequestHeader(‘label’, ‘value’)   把指定首部设置为提供的值，在设置任何首部之前必须调用open方法。<br>这里面后三个方法是很重要的。<br>属性<br>onreadystatechange 状态改变触发器<br>readyState 对象的状态<br>0代表未初始化，此时已经创建了一个XMLHttpRequest对象<br>1代表读取中，此时代码已经调用XMLHttpRequest的open方法并且XMLHttpRequest已经将请求发送到服务期。<br>2代表已读取，此时已经通过open方法把一个请求发送到服务端，但是还没有收到。<br>3代表交互中，此时已经收到http响应头部信息，但是消息主体部分还没有完全接受<br>4代表完成，此时响应已经被完全接受。<br>responseText 服务器进程返回数据的文本版本<br>responseXML 服务器进程返回数据的兼容DOM的XML文旦对象<br>status 服务器返回的状态码  </p>
+</li>
+<li><p>状态码的功能<br>状态码是用来描述返回的请求结果。借助状态码，我们可以知道是正确的处理了请求还是出现了错误。<br>状态码的响应类别一共有4种，比如200，数字中的第一位代表响应的类别，后两位无分类。</p>
+</li>
+<li><p>状态码的五种类别<br>1xx（信息性状态码），接受的请求正在处理<br>2xx（成功状态码），请求正确处理完毕<br>3xx（重定向状态码），需要进行附加操作以完成请求<br>4xx（客户端错误状态码），服务器无法请求类别<br>4xx（服务器错误状态码），服务器处理请求出错其中一般会遇到的大致有以下14种：<br>2xx 成功<br>200 OK 请求已经被服务器正常处理。<br>204 No Content 请求处理成功，但是没有资源可以返回。<br>206 Partial Content 表示客户端进行了范围请求，而服务器成功执行了这部分的GET请求。 content-Range在首部里面。<br>3xx 重定向<br>301 Moved Permanently 永久性重定向<br>302 Found 临时性重定向，禁止post变成get<br>303 See Other 请求的对应资源存在着另一个URI，因使用GET方法定性获取请求的资源<br>304 Not Modified 资源已找到，但是为符合要求<br>307 Temporary Redirect 临时重定向，与302含义相同。<br>4xx 客户端错误<br>400 Bad Request 请求报文中存在语法错误<br>401 Unauthorized   发送的请求需要有通过HTTP认证的认证信息。如果之前请求过一次，则表示用户认证失败。<br>403 Forbidden 不允许访问该资源<br>404 Not Found 服务器上没有改资源<br>4xx 服务器错误<br>400 Internal Server Error 服务器端在执行请求时发生错误<br>403 Service Unavailable   服务器暂时处于超负载或正在停机维护，无法处理请求<br>注意：不少返回的状态码响应是错误的，但是用户可能察觉不到这点  </p>
+</li>
+<li><p>什么是XML<br>XML是扩展标记语言，能够用一系列简单的标记描述数据</p>
+</li>
+<li><p>XML的解析方式<br>常用的用dom解析和sax解析。dom解析是一次性读取xml文件并将其构造为DOM对象供程序使用，优点是操作方便，但是比较耗内存。Sax是按事件驱动的方式解析的，占用内存少，但是编程复杂。</p>
+</li>
+<li><p>Ajax包含下列技术：<br>1.基于web标准（standards-based presentation）XHTML+CSS的表示；<br>2.使用 DOM（Document Object Model）进行动态显示及交互；<br>3.使用 XML 和 XSLT 进行数据交换及相关操作；<br>4.使用 XMLHttpRequest 进行异步数据查询、检索；<br>5.使用 JavaScript 将所有的东西绑定在一起。</p>
+</li>
+</ol>
+
+    </div>
+
+    <div class="post-footer">   
+        <div>
+            
+                转载声明：商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="liuzhaoxu1996.github.io" target="_blank">刘朝旭lius</a>
+            
+        </div>
+        <div>
+            
+        </div>  
+    </div>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+        <a href="/2017/02/03/json，异步加载，时间线/" class="pre-post btn btn-default"><i class="fa fa-angle-left fa-fw"></i>上一篇</a>
+    
+    
+        <a href="/2017/01/07/轮播图项目/" class="next-post btn btn-default">下一篇<i class="fa fa-angle-right fa-fw"></i></a>
+    
+</div>
+
+
+    <div id="comments">
+        
+   <p>评论系统未开启，无法评论！</p>
+
+    </div>
+
+
+
+
+
+                </main>
+                
+    <aside class="col-md-4 sidebar">
+        
+        
+        
+        
+        
+        
+    <div class="widget">
+      <h3 class="title">Social</h3> 
+        <div class="content social">
+            
+	            <a href="//github.com/liuzhaoxu1996" rel="external nofollow" title="Github" target="_blank">
+			    	<i class="git fa fa-git"></i>
+			    </a>
+            
+	            <a href="mailto:1097959570@qq.com" rel="external nofollow" title="邮箱" target="_blank">
+			    	<i class="envelope-o fa fa-envelope-o"></i>
+			    </a>
+            
+	            <a href="/" rel="external nofollow" title="联系QQ" target="_blank">
+			    	<i class="qq fa fa-qq"></i>
+			    </a>
+            
+	            <a href="/" rel="external nofollow" title="微博" target="_blank">
+			    	<i class="weibo fa fa-weibo"></i>
+			    </a>
+            
+        </div>
+    </div>
+
+
+        
+        
+
+        
+        
+    <div class="widget">
+      <h3 class="title">Archives</h3>
+        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/"><i class="fa" aria-hidden="true">January 2018</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/"><i class="fa" aria-hidden="true">December 2017</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/"><i class="fa" aria-hidden="true">November 2017</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/"><i class="fa" aria-hidden="true">October 2017</i></a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/"><i class="fa" aria-hidden="true">June 2017</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/"><i class="fa" aria-hidden="true">May 2017</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/"><i class="fa" aria-hidden="true">April 2017</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/"><i class="fa" aria-hidden="true">March 2017</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/"><i class="fa" aria-hidden="true">February 2017</i></a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/"><i class="fa" aria-hidden="true">January 2017</i></a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/"><i class="fa" aria-hidden="true">December 2016</i></a><span class="archive-list-count">1</span></li></ul>
+    </div>
+
+
+        
+        
+
+        
+        
+    <div class="widget">
+        <h3 class="title">Friends</h3>
+        <div class="content friends-link">
+        
+            <a href="http://www.zhangxinxu.com/" class="fa" target="_blank">张鑫旭博客</a>
+        
+            <a href="http://fex.baidu.com/" class="fa" target="_blank">百度FEX</a>
+        
+            <a href="http://www.alloyteam.com/" class="fa" target="_blank">腾讯Alloyteam</a>
+        
+        </div>
+    </div>
+
+
+        
+    </aside>
+
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+    <span id="busuanzi_container_page_pv" >
+        本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+    </span>
+</footer>
+
+<a id="back-to-top" class="hide">
+	<i class="fa fa-chevron-up"></i>
+</a>
+
+
+
+
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <span>Copyright &copy; 2017
+                </span> | 
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> | 
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="/js/app.js?rev=@@hash"></script>
+
+
+</body>
+</html>

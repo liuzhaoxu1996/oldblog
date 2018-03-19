@@ -27,7 +27,7 @@
     <!--Title-->
 
 
-<title>Archives | blog</title>
+<title>轮播图项目总结 | blog</title>
 
 
     <link rel="alternate" href="/atom.xml" title="blog" type="application/atom+xml">
@@ -120,81 +120,104 @@
     <section class="content-wrap">
         <div class="container">
             <div class="row">
-                <main class="col-md-8 main-content ">
-                    <div id="main">
-  <div id="post-list">
-    <ul class="archives-post-list">
-    	<h1 class="info">年 月</h1>
-        
-          <li class="post-items" _href="/2018/01/02/函数节流&防抖/">
-            <h3 class="post-item-title">
-            	<a href="/2018/01/02/函数节流&防抖/"> 函数防抖&amp;节流 </a>
-            </h3>  
-          </li>
-        
-          <li class="post-items" _href="/2017/12/07/javascript模式/">
-            <h3 class="post-item-title">
-            	<a href="/2017/12/07/javascript模式/"> js模式读书笔记 </a>
-            </h3>  
-          </li>
-        
-          <li class="post-items" _href="/2017/12/02/原型，原型链，call，apply/">
-            <h3 class="post-item-title">
-            	<a href="/2017/12/02/原型，原型链，call，apply/"> 原型，原型链，call，apply </a>
-            </h3>  
-          </li>
-        
-          <li class="post-items" _href="/2017/11/27/class类/">
-            <h3 class="post-item-title">
-            	<a href="/2017/11/27/class类/"> ES6 Class 类 </a>
-            </h3>  
-          </li>
-        
-          <li class="post-items" _href="/2017/11/02/移动端适配-viewport/">
-            <h3 class="post-item-title">
-            	<a href="/2017/11/02/移动端适配-viewport/"> 移动端适配-viewport </a>
-            </h3>  
-          </li>
-        
-          <li class="post-items" _href="/2017/10/31/继承模式, 命名空间, 对象枚举/">
-            <h3 class="post-item-title">
-            	<a href="/2017/10/31/继承模式, 命名空间, 对象枚举/"> 继承模式 </a>
-            </h3>  
-          </li>
-        
-          <li class="post-items" _href="/2017/10/01/promise/">
-            <h3 class="post-item-title">
-            	<a href="/2017/10/01/promise/"> promise与callback对比 </a>
-            </h3>  
-          </li>
-        
-          <li class="post-items" _href="/2017/10/01/IE的haslayout详解/">
-            <h3 class="post-item-title">
-            	<a href="/2017/10/01/IE的haslayout详解/"> haslayout 详解 </a>
-            </h3>  
-          </li>
-        
-          <li class="post-items" _href="/2017/06/01/19. 获取窗口属性，获取dom尺寸，脚本化CSS/">
-            <h3 class="post-item-title">
-            	<a href="/2017/06/01/19. 获取窗口属性，获取dom尺寸，脚本化CSS/"> 获取窗口属性，获取 dom 尺寸 </a>
-            </h3>  
-          </li>
-        
-          <li class="post-items" _href="/2017/05/07/函数封装/">
-            <h3 class="post-item-title">
-            	<a href="/2017/05/07/函数封装/"> 封装一些兼容性函数 </a>
-            </h3>  
-          </li>
-        
-    </ul>
-  </div>
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="轮播图项目总结">
+            
+	            轮播图项目总结
+            
+        </h1>
+        <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/ ">
+             
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                 
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">2017/01/07</span>
+    </span>
 </div>
 
-    <nav class="pagination" role="navigation">
-        <div id="page-nav">
-            <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/"><i class='fa fa-angle-right'></i></a>
+            
+            
+            <p class="fa fa-exclamation-triangle warning">
+                本文于<strong>436</strong>天之前发表，文中内容可能已经过时。
+            </p>
+        
+    </div>
+    
+    <div class="post-body post-content">
+        <h1 id="轮播图项目总结："><a href="#轮播图项目总结：" class="headerlink" title="轮播图项目总结："></a>轮播图项目总结：</h1><p>切换方式: 上下滑动 左右滑动 直接显示/隐藏</p>
+<p>直接显示/隐藏样式:</p>
+<h4 id="wrapper"><a href="#wrapper" class="headerlink" title="wrapper:"></a>wrapper:</h4><ul>
+<li>position: absolute;</li>
+<li>display: none;</li>
+<li>配置 slider-active</li>
+</ul>
+<h4 id="盒子"><a href="#盒子" class="headerlink" title="盒子"></a>盒子</h4><h4 id="按钮-上一张-下一张"><a href="#按钮-上一张-下一张" class="headerlink" title="按钮(上一张/下一张)"></a>按钮(上一张/下一张)</h4><ul>
+<li>这里有个坑:<br>左右两个按钮除了 left 样式不同之外,其他都相同,这样我们可以先给所有的 btn 都设置一样的定位和样式,在通过独立修改右面 btn 的<code>right=0</code>就可以了,但是事实上并不可以,应为如果<code>position=absolute</code>;left 和 right 都有的话,浏览器会忽略 right,只用 left 作为定位,所以我们应该给右面的 btn 先设置<code>left=auto</code>,再<code>right=0</code>,可以解决此问题</li>
+</ul>
+<h4 id="js-部分"><a href="#js-部分" class="headerlink" title="js 部分"></a>js 部分</h4><ol>
+<li>var timer = null;</li>
+<li>function autoMove</li>
+<li>获取 ul, moveWidth, btn, slider</li>
+<li>autoMove 先实现自动轮播功能</li>
+<li>用 index 来获取当前轮播的第几个图片</li>
+<li>function changeIndex 通过 index 来讲 span 实现同步轮播,先把所有的 span 的 class 全部为空,再把 span[index]是 active</li>
+</ol>
+<h4 id="bug"><a href="#bug" class="headerlink" title="bug"></a>bug</h4><p>边界时由于 index 一直自加,span 的 className 赋值就会出错,找不到对应的 span</p>
+<p>刚开始点击 leftbtn, 第一张图片的上一张为空解决办法:if(你得当前位置 left 是 0)时 点击上一页按钮,直接把 left 变成最后一张的位置,记得加”px”,<br>还有把 index 设置成最后一张的值</p>
+<p>leftbtn 点击会与 autoMove 函数争抢解决办法:每次都在最上方 clear 一下, 但是定时器就得用 setTimeout()<br>在最后在开一个定时器</p>
+<p>疯狂点击,轮播图崩溃了解决办法 上个锁</p>
+<p>给所有 span 附上点击事件,会有闭包,用立即执行函数,参数写 myindex,防止和全局 index 污染</p>
+
+    </div>
+
+    <div class="post-footer">   
+        <div>
+            
+                转载声明：商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="liuzhaoxu1996.github.io" target="_blank">刘朝旭lius</a>
+            
         </div>
-    </nav>
+        <div>
+            
+        </div>  
+    </div>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+        <a href="/2017/02/01/ajax/" class="pre-post btn btn-default"><i class="fa fa-angle-left fa-fw"></i>上一篇</a>
+    
+    
+        <a href="/2016/12/07/中介者对象/" class="next-post btn btn-default">下一篇<i class="fa fa-angle-right fa-fw"></i></a>
+    
+</div>
+
+
+    <div id="comments">
+        
+   <p>评论系统未开启，无法评论！</p>
+
+    </div>
 
 
 

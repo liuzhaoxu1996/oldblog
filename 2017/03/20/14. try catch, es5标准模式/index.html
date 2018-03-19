@@ -27,7 +27,7 @@
     <!--Title-->
 
 
-<title>Archives | blog</title>
+<title>try..catch es5标准模式 | blog</title>
 
 
     <link rel="alternate" href="/atom.xml" title="blog" type="application/atom+xml">
@@ -120,81 +120,113 @@
     <section class="content-wrap">
         <div class="container">
             <div class="row">
-                <main class="col-md-8 main-content ">
-                    <div id="main">
-  <div id="post-list">
-    <ul class="archives-post-list">
-    	<h1 class="info">年 月</h1>
-        
-          <li class="post-items" _href="/2018/01/02/函数节流&防抖/">
-            <h3 class="post-item-title">
-            	<a href="/2018/01/02/函数节流&防抖/"> 函数防抖&amp;节流 </a>
-            </h3>  
-          </li>
-        
-          <li class="post-items" _href="/2017/12/07/javascript模式/">
-            <h3 class="post-item-title">
-            	<a href="/2017/12/07/javascript模式/"> js模式读书笔记 </a>
-            </h3>  
-          </li>
-        
-          <li class="post-items" _href="/2017/12/02/原型，原型链，call，apply/">
-            <h3 class="post-item-title">
-            	<a href="/2017/12/02/原型，原型链，call，apply/"> 原型，原型链，call，apply </a>
-            </h3>  
-          </li>
-        
-          <li class="post-items" _href="/2017/11/27/class类/">
-            <h3 class="post-item-title">
-            	<a href="/2017/11/27/class类/"> ES6 Class 类 </a>
-            </h3>  
-          </li>
-        
-          <li class="post-items" _href="/2017/11/02/移动端适配-viewport/">
-            <h3 class="post-item-title">
-            	<a href="/2017/11/02/移动端适配-viewport/"> 移动端适配-viewport </a>
-            </h3>  
-          </li>
-        
-          <li class="post-items" _href="/2017/10/31/继承模式, 命名空间, 对象枚举/">
-            <h3 class="post-item-title">
-            	<a href="/2017/10/31/继承模式, 命名空间, 对象枚举/"> 继承模式 </a>
-            </h3>  
-          </li>
-        
-          <li class="post-items" _href="/2017/10/01/promise/">
-            <h3 class="post-item-title">
-            	<a href="/2017/10/01/promise/"> promise与callback对比 </a>
-            </h3>  
-          </li>
-        
-          <li class="post-items" _href="/2017/10/01/IE的haslayout详解/">
-            <h3 class="post-item-title">
-            	<a href="/2017/10/01/IE的haslayout详解/"> haslayout 详解 </a>
-            </h3>  
-          </li>
-        
-          <li class="post-items" _href="/2017/06/01/19. 获取窗口属性，获取dom尺寸，脚本化CSS/">
-            <h3 class="post-item-title">
-            	<a href="/2017/06/01/19. 获取窗口属性，获取dom尺寸，脚本化CSS/"> 获取窗口属性，获取 dom 尺寸 </a>
-            </h3>  
-          </li>
-        
-          <li class="post-items" _href="/2017/05/07/函数封装/">
-            <h3 class="post-item-title">
-            	<a href="/2017/05/07/函数封装/"> 封装一些兼容性函数 </a>
-            </h3>  
-          </li>
-        
-    </ul>
-  </div>
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="try..catch es5标准模式">
+            
+	            try..catch es5标准模式
+            
+        </h1>
+        <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/categories/ ">
+             
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                 
+            
+        </span>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">2017/03/20</span>
+    </span>
 </div>
 
-    <nav class="pagination" role="navigation">
-        <div id="page-nav">
-            <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/"><i class='fa fa-angle-right'></i></a>
+            
+            
+            <p class="fa fa-exclamation-triangle warning">
+                本文于<strong>364</strong>天之前发表，文中内容可能已经过时。
+            </p>
+        
+    </div>
+    
+    <div class="post-body post-content">
+        <h1 id="try-catch"><a href="#try-catch" class="headerlink" title="try..catch"></a>try..catch</h1><ul>
+<li><strong>举个例子理解</strong></li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'a'</span>);</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'b'</span>);</span><br><span class="line">    <span class="built_in">console</span>.log(c); <span class="comment">//这行出错；</span></span><br><span class="line">    <span class="built_in">console</span>.log(d); <span class="comment">//上行出错,系统就不会看这行的代码，直接跳到catch里</span></span><br><span class="line">&#125;<span class="keyword">catch</span>(e) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(e.name + <span class="string">':'</span> + e.message);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'d'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>里面的语法如果发生错误，系统不会报错，直接跳到<span class="keyword">catch</span>里面执行<span class="built_in">console</span>.log(e.name + <span class="string">':'</span> + e.message);</span><br><span class="line">如果<span class="keyword">try</span>里面的语法没有错误，<span class="keyword">catch</span>不会执行里面的代码。<span class="keyword">catch</span>的参数e是error对象;</span><br><span class="line">error对象包含error.message和error.name;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>如果try里面有多个错误怎么办呢？<br></strong><br>—-&gt;如果try里面第一个错误是在第三行，那么系统执行到第三行的时候直接跳进catch里，不会看第三行以下的错误代码。 </li>
+<li>错误类型<ul>
+<li>EvalError: eval()使用与定义不一致;</li>
+<li>RangeError: 数值越界</li>
+<li><strong>ReferenceError</strong>: 非法或不能识别的引用数值 (引用错误，赋值错误 例如：当一个变量没经声明就使用，函数名声明就使用，例如 aa is not defined)</li>
+<li><strong>SyntaxError</strong>: 发生语法解析错误 (低级错误)</li>
+<li>TypeError: 操作数类型错误 </li>
+<li>URLError: URL处理函数使用不当 (引用地址错误)</li>
+</ul>
+</li>
+</ul>
+<h2 id="ES5标准模式"><a href="#ES5标准模式" class="headerlink" title="ES5标准模式"></a>ES5标准模式</h2><ul>
+<li>用<figure class="highlight plain"><figcaption><span>strict";```1.写在页面逻辑的最顶端2.推荐写在局部函数最顶端，这样就可以局部使用严格模式。 这样es3中的有的方法不能用，比如arguments.callee;</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- 那为什么用字符串启动呢？ 这样写可以兼容老版本浏览器，如果老版本不能识别，也不会报错。</span><br><span class="line"></span><br><span class="line">==es5不能使用的方法==</span><br><span class="line">1. with()  为语句建立默认对象。</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>var obj = {<br>    name : “obj”<br>}<br>var name = ‘window’;</p>
+<p>function test() {<br>    var age = 123;<br>    var name = ‘aa’<br>    with(obj) {<br>        console.log(name);<br>        console.log(age);<br>    }<br>}<br>会打印obj 123 </p>
+<p>作用 </p>
+<ol>
+<li>防止污染变量<br>with(liuzhaoxu.js) {<br> …..里面的代码直接指向liuzhaoxu.js 不会污染全局变量<br>}</li>
+<li>简化代码<br>with(document) {<br> write(‘a’); 这样就不用写document了<br>}</li>
+</ol>
+<p>但是一般不用，了解就行，因为他改变了作用域链；导致系统编译缓慢<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">2. arguments.callee</span><br><span class="line">3. arguments.caller</span><br><span class="line"></span><br><span class="line">以上方法在es5不能使用</span><br><span class="line"></span><br><span class="line">es5规定：严格模式下</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">- 变量使用前必须声明</span><br><span class="line">- 局部的this必须被赋值</span><br></pre></td></tr></table></figure></p>
+<p>function Test() {<br>    console.log(this);<br>}<br>Test();<br>严格模式下 返回undefined；<br>非严格模式下 返回window；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- 不能有重复的参数和属性</span><br></pre></td></tr></table></figure></p>
+<p>function test(name, name) {<br>    console.log(name);<br>}<br>test(1,2)<br>重复的参数在es3里不会报错 返回2<br>但是es5是报错的<br>```</p>
+<ul>
+<li>eval<br><br>什么情况下都不要使用eval()<br>eval是魔鬼，因为他能改变作用域。</li>
+</ul>
+
+    </div>
+
+    <div class="post-footer">   
+        <div>
+            
+                转载声明：商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="liuzhaoxu1996.github.io" target="_blank">刘朝旭lius</a>
+            
         </div>
-    </nav>
+        <div>
+            
+        </div>  
+    </div>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+        <a href="/2017/04/20/ js介绍，逻辑运算符，变量，值类型，运算符/" class="pre-post btn btn-default"><i class="fa fa-angle-left fa-fw"></i>上一篇</a>
+    
+    
+        <a href="/2017/02/03/json，异步加载，时间线/" class="next-post btn btn-default">下一篇<i class="fa fa-angle-right fa-fw"></i></a>
+    
+</div>
+
+
+    <div id="comments">
+        
+   <p>评论系统未开启，无法评论！</p>
+
+    </div>
 
 
 
